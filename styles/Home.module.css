@@ -1,7 +1,3 @@
-.container {
-  padding: 0 2rem;
-}
-
 .main {
   min-height: 100vh;
   padding: 4rem 0;
@@ -13,66 +9,6 @@
   background: linear-gradient(90deg, black, white);
 }
 
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
-  text-align: center;
-}
-
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-}
 
 .card {
   margin: 1rem;
@@ -94,12 +30,11 @@
 .card:hover,
 .card:focus,
 .card:active {
-  color: #ffffff;
   border-color: #ffffff;
 }
 
 .card h2 {
-  margin: 0 0 1rem 0;
+  margin: 0;
   font-size: 1.5rem;
 }
 
@@ -107,18 +42,6 @@
   margin: 0;
   font-size: 1.25rem;
   line-height: 1.5;
-}
-
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
-}
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
 }
 
 .color1 {
@@ -137,4 +60,31 @@
 
 .pickers {
   text-align: center;
+}
+
+.slider {
+  padding: 10px;
+  margin: 0;
+  -webkit-appearance: none;
+  background: transparent;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  cursor: pointer;
+  background: #ffffff;
+  border-radius: 10px;
+  border: 3px solid #000000;
+  margin-top: -6px;
+  height: 18px;
+  width: 18px;
+}
+
+.slider::-webkit-slider-runnable-track {
+  cursor: pointer;
+  background: #ffffff;
+  border-radius: 4px;
+  border: 0.2px solid #ffffff;
+  width: 100%;
+  height: 8px;
 }
